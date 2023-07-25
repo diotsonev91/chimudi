@@ -1,0 +1,92 @@
+.header-container {
+      
+
+  }
+    
+  .welcome-text {
+    font-size: 48px;
+    margin-top: 20px;
+
+    
+    background-image: linear-gradient(45deg,
+      rgba(255, 163, 10, 0.4),
+      rgba(50, 168, 82, 0.8),
+      rgba(50, 168, 82, 0.4),
+    
+      rgba(156, 224, 29, 0.8),
+      rgba(221, 51, 21, 0.8),
+      rgba(156, 39, 176, 0.4)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: moveTiltUpDown 3s linear alternate;
+  }
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+ 
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+ 
+.bg3 {
+    animation-duration:5s;
+}
+ 
+.content {
+    width:60%;
+    height: 70%;
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+ 
+h1 {
+    font-family:monospace;
+}
+ 
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+ 
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+  @keyframes moveTiltUpDown {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0);
+    }
+    50% {
+      transform: translate(-5px, -5px) rotate(5deg) scale(2.5);
+    }
+  }
+  
+  .welcome-text:nth-child() {
+    animation-delay: 0s;
+  }
+  
+  .welcome-text:nth-child() {
+    animation-delay: 0.5s; /* Add delay of 0.5s */
+  }
+  

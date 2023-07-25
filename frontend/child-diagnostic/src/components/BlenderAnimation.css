@@ -1,0 +1,13 @@
+/* BlenderAnimation.css */
+.animation-container {
+    
+    width: 100%; /* Set the container width to 100% */
+    max-width: 800px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .animation-video {
+    width: 100%; /* Set the video width to 100% of its container */
+    height: auto; /* Let the height scale proportionally based on the width */
+  }
+  
