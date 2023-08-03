@@ -1,13 +1,14 @@
 .navigation-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-color: #ff9933;
-    border-width: 5px;
-    padding: 10px;
-    margin-bottom: 1%;
-    
-    background-image: linear-gradient(45deg,
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: #ff9933;
+  border-width: 5px;
+  padding: 10px;
+  margin-bottom: 1%;
+
+  background-image: linear-gradient(
+    45deg,
     rgba(255, 163, 10, 0.4),
     rgba(117, 168, 50, 0.8),
     rgba(50, 168, 82, 0.4),
@@ -15,35 +16,67 @@
     rgba(25, 118, 210, 0.4),
     rgba(156, 39, 176, 0.8),
     rgba(156, 39, 176, 0.4)
-  );;
-  }
-  
-  .navigation-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff9933;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .navigation-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .sign-in-button,
-  .sign-up-button {
-    font-size: 16px;
-    padding: 8px 16px;
-    background-color: #ffcc00;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  }
-  
-  .sign-in-button:hover,
-  .sign-up-button:hover {
-    background-color: #ff9933;
-  }
-  
+  );
+}
+
+.navigation-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9933;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.navigation-logo:hover {
+  color: #ffcc00;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Styles for the new buttons inside the navigation */
+.sign-in-button,
+.sign-up-button,
+.exercises-button,
+.diagnostic-button,
+.results-button,
+.sign-out-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #ffcc00;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover styles for all buttons */
+.sign-in-button:hover,
+.sign-up-button:hover,
+.exercises-button:hover,
+.diagnostic-button:hover,
+.results-button:hover,
+.sign-out-button:hover {
+  background-color: #ff9933;
+}
+
+.nav-link {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #ffcc00;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-decoration: none; /* Remove the default underline */
+}
+
+/* Hover styles for the navigation links */
+.nav-link:hover {
+  background-color: #ff9933;
+}
