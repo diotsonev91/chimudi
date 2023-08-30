@@ -1,0 +1,34 @@
+/* ExerciseComponent.css */
+
+.exercise-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .age-group-dropdown {
+    margin-bottom: 20px;
+  }
+  
+  .exercise-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .selected-age-group {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333; /* Customize the color */
+  }
+  
+  .error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }

@@ -1,0 +1,22 @@
+/* styles/ButtonStyles.css */
+
+.button {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .primary-button {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .secondary-button {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 1px solid #007bff;
+  }
+  

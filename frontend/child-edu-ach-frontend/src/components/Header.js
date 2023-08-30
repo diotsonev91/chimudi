@@ -1,6 +1,6 @@
 import React from 'react';
 import BlenderAnimation from './BlenderAnimation';
-import './Header.css'; // Import the CSS file for styling
+import '../styles/Header.css'; // Import the CSS file for styling
 import SignInComponent from './SignInComponent';
 import SignUpComponent from './SignUpComponent';
 

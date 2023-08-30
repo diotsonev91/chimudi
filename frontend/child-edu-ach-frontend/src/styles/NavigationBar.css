@@ -19,6 +19,8 @@
   );
 }
 
+
+
 .navigation-logo {
   font-size: 24px;
   font-weight: bold;
@@ -62,6 +64,13 @@
 .results-button:hover,
 .sign-out-button:hover {
   background-color: #ff9933;
+}
+
+.sign-out-container {
+  display: flex;
+  
+  align-items: right;
+  gap: 10px;
 }
 
 .nav-link {

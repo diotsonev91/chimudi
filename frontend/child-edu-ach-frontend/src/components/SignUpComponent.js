@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './sharedAuthStyles.css';
+import '../styles/sharedAuthStyles.css';
 const SignUpComponent = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

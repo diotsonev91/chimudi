@@ -1,0 +1,37 @@
+.teaching-program-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .lesson-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .lesson-table th,
+  .lesson-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .lesson-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .lesson-table td {
+    font-size: 14px;
+  }
+  
+  .week-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }

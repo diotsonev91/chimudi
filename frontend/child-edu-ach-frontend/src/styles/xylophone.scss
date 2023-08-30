@@ -1,0 +1,382 @@
+@function longShadow($number, $color) {
+    $box-shadow: 1px 1px #{$color};
+    @for $i from 1 through $number {
+      $box-shadow: '#{$box-shadow}, #{$i}px #{$i}px #{$color}'; 
+    }
+    @return unquote($box-shadow);
+  }
+  
+  body {
+    background-color: #FCF8E0;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .wrapper {
+    // margin-bottom: 302px; 
+    text-align: center; 
+  }
+  
+  .container {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 36px 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      display: flex;
+      top: 51%;
+      left: -10px;
+      width: 625px;
+      height: 120px;
+      background-color: #574632;
+      transform: translateY(-50%);
+      border-radius: 3px;
+      box-shadow: longShadow(3, darken(#574632, 9));
+    }
+  }
+  //
+  .bnt-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: space-between; 
+    flex-direction: row;
+    width: 700px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2D3235;
+    font-weight: normal;
+    width: 150px;
+    height: 35px;
+    background-color: #DAA51E;
+    border-radius: 5px;
+    box-shadow: longShadow(2, darken(#DAA51E, 20));
+    &-1:before {
+      content: 'La Cucaracha';
+      margin-right: 3px;
+    }
+    &-2:before {
+      content: 'Тръгнал Кос';
+      margin-right: 3px;
+    }
+    &-3:before {
+      content: 'Happy Birthday';
+      margin-right: 3px;
+    }
+    &-4:before {
+      content: 'Twinkle Twinkle';
+      margin-right: 3px;
+    }
+     &-5:before {
+      content: 'Cielito Lindo';
+      margin-right: 3px;
+    }
+    &:active {
+      box-shadow: longShadow(2, darken(#DAA51E, 20)) inset;
+      color: lighten(#2D3235, 5);
+    }
+  }
+  
+  .screw1,.screw2  {
+    width: 20px;
+    height: 20px;
+    background-color: #CCCCCC;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: longShadow(1, darken(#CCCCCC, 20));
+  }
+  
+  .screw1 {
+    &-do1 {
+      top: 105px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(8deg);
+      }
+    }
+    &-re {
+      top: 95px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(54deg);
+      }    
+    }
+    &-mi {
+      top: 85px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(48deg);
+      }
+    }
+    &-fa {
+      top: 75px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(22deg);
+    }
+    }
+    &-sol {
+      top: 65px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(63deg);
+      }
+    }
+    &-la {
+      top: 55px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(97deg);
+      }
+    }
+    &-si {
+      top: 45px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(17deg);
+      }
+    }
+    &-do2 {
+      top: 35px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(38deg);
+      }
+    }  
+  }
+  
+  .screw2 {
+    &-do1 {
+      top: 175px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(14deg);
+      }  
+    }
+    &-re {
+      top: 165px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(27deg);
+      }  
+    }
+    &-mi {
+      top: 155px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(4deg);
+      }  
+    }
+    &-fa {
+      top: 145px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(38deg);
+      }  
+    }
+    &-sol {
+      top: 135px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(56deg);
+      }  
+    }
+    &-la {
+      top: 125px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(18deg);
+      }  
+    }
+    &-si {
+      top: 115px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(56deg);
+      }  
+    }
+    &-do2 {
+      top: 105px;
+      &:after {
+        content: '|';
+        color: darken(#CCCCCC, 20);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(84deg);
+      }  
+    }  
+  }
+  
+  .note {
+    width: 60px;
+    display: flex;
+    color: #3a2f21;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+    &-do1 {
+      background-color: #FF0033;
+      height: 300px;
+      box-shadow: longShadow(3, darken(#FF0033, 9));
+      &:after {
+        content: 'DO';
+      }
+      &:active {
+        background-color: darken(#FF0033, 15);
+      }
+    }
+    &-re {
+      background-color: #4A4475;
+      height: 280px;
+      box-shadow: longShadow(3, darken(#4A4475, 9));
+      &:after {
+        content: 'RE';
+      }
+      &:active {
+        background-color: darken(#4A4475, 15);
+      }
+    }
+    &-mi {
+      background-color: #1482A1;
+      height: 260px;
+      box-shadow: longShadow(3, darken(#1482A1, 9));
+      &:after {
+        content: 'MI';
+      }
+      &:active {
+        background-color: darken(#1482A1, 15);
+      }
+    }
+    &-fa {
+      background-color: #F3A30F;
+      height: 240px;
+      box-shadow: longShadow(3, darken(#F3A30F, 9));
+      &:after {
+        content: 'FA';
+      }
+      &:active {
+        background-color: darken(#F3A30F, 15);
+      }
+    }
+    &-sol {
+      background-color: #5DD3B1;
+      height: 220px;
+      box-shadow: longShadow(3, darken(#5DD3B1, 9));
+      &:after {
+        content: 'SOL';
+      }
+      &:active {
+        background-color: darken(#5DD3B1, 15);
+      }
+    }
+    &-la {
+      background-color: #90DBCF;
+      height: 200px;
+      box-shadow: longShadow(3, darken(#90DBCF, 9));
+      &:after {
+        content: 'LA';
+      }
+      &:active {
+        background-color: darken(#90DBCF, 15);
+      }
+    }
+    &-si {
+      background-color: #FFA4A0;
+      height: 180px;
+      box-shadow: longShadow(3, darken(#FFA4A0, 9));
+      &:after {
+        content: 'SI';
+      }
+      &:active {
+        background-color: darken(#FFA4A0, 15);
+      }
+    }
+    &-do2 {
+      background-color: #FF404B;
+      height: 160px;
+      box-shadow: longShadow(3, darken(#FF404B, 9));
+      &:after {
+        content: 'DO';
+      }
+      &:active {
+        background-color: darken(#FF404B, 15);
+      }
+    }
+  }

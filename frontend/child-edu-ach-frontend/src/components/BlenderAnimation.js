@@ -1,6 +1,6 @@
 import React from 'react';
 import animationVideo from '../assets/animation.mp4';
-import './BlenderAnimation.css'; // Import the CSS file for styling
+import '../styles/BlenderAnimation.css'; // Import the CSS file for styling
 
 const BlenderAnimation = () => {
   return (

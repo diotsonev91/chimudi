@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './sharedAuthStyles.css';
+import '../styles/sharedAuthStyles.css';
 import { useNavigate } from "react-router-dom";
 
 
